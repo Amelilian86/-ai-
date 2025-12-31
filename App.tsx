@@ -1,10 +1,10 @@
 
 import React, { useState, useCallback } from 'react';
-import { AnalysisInput } from './types';
-import InputForm from './components/InputForm';
-import MemoOutput from './components/MemoOutput';
-import { generateInvestmentMemo } from './services/geminiService';
-import { APP_TITLE, APP_SUBTITLE } from './constants';
+import { AnalysisInput } from './types.ts';
+import InputForm from './components/InputForm.tsx';
+import MemoOutput from './components/MemoOutput.tsx';
+import { generateInvestmentMemo } from './services/geminiService.ts';
+import { APP_TITLE, APP_SUBTITLE } from './constants.tsx';
 
 const App: React.FC = () => {
   const [input, setInput] = useState<AnalysisInput>({
